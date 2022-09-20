@@ -2,8 +2,8 @@ fetch("https://jsonplaceholder.typicode.com/todos")
   .then(response => response.json())
   .then(json => {
     const completed = json // Complete this code
-    const filtered = completed.filter(
-        todo => todo.userId != null && todo.completed === true
+    const filtered = completed.filter(todo => 
+      todo.userId != null && todo.completed === false
     ).map(todo => {
         return{
             userId: todo.userId,
